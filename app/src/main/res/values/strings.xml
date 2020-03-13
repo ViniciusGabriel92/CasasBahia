@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CasasBahia</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Vinicius Gabriel</string>
+    <string name="nav_header_subtitle">vgabriel992@yahoo.com.br</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Produtos</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!-- URL's API   -->
+    <string name="Mockyio">https://www.mocky.io/v2/</string>
+
+    <!-- Text Button   -->
+    <string name="buy">COMPRAR</string>
+    <!-- Text View   -->
+    <string name="view_more_installment">ver parcelamentos</string>
+    <!-- Mensagens modal   -->
+    <string name="message_error">Verifique sua conexão a internet, ou tente novamente mais tarde.</string>
+
+</resources>

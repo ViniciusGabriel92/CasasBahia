@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/default_horizontal_spacing"
+    android:paddingRight="@dimen/default_horizontal_spacing">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dp_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/dp_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:minHeight="250dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingTop="@dimen/default_vertical_item_spacing"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="@dimen/size_big1_text"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dp_view_pager"
+            tools:text="Smart TV LED 43” Full HD Samsung 43J5200 Smart TV LED 43” Full HD Samsung 43J5200 Smart TV LED 43” Full HD Samsung 43J5200" />
+
+        <TextView
+            android:id="@+id/dp_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingTop="@dimen/default_vertical_item_spacing"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/size_big1_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dp_name"
+            tools:text="Smart TV LED 43” Full HD Samsung 43J5200 Smart TV LED 43” Full HD Samsung 43J5200 Smart TV LED 43” Full HD Samsung 43J5200" />
+
+        <TextView
+            android:id="@+id/dp_previous_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:textColor="#000"
+            android:textSize="@dimen/size_big2_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dp_description"
+            tools:text="R$ 1.439,00" />
+
+        <TextView
+            android:id="@+id/dp_current_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/size_big1_text"
+            app:layout_constraintBottom_toBottomOf="@+id/dp_previous_price"
+            app:layout_constraintLeft_toRightOf="@+id/dp_previous_price"
+            tools:text="R$ 1.399,00" />
+
+        <TextView
+            android:id="@+id/dp_payment_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/size_big2_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dp_previous_price"
+            tools:text="10x de R$139,90" />
+
+        <TextView
+            android:id="@+id/dp_more_installment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/size_big2_text"
+            app:layout_constraintBottom_toBottomOf="@+id/dp_payment_plan"
+            app:layout_constraintLeft_toRightOf="@+id/dp_payment_plan"
+            tools:text="ver parcelamentos" />
+
+        <Button
+            android:id="@+id/dp_btn_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bt_buy"
+            android:text="@string/buy"
+            android:textColor="#FFF"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dp_payment_plan" />
+
+        <include
+            layout="@layout/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
